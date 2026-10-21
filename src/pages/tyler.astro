@@ -5,27 +5,101 @@ import Layout from "../layouts/layout.astro";
 <Layout title="Tyler, The Creator">
     <section class="artist-hero">
         <h1>Tyler, The Creator</h1>
-        <p>
-            Tyler Gregory Okonma es un rapero, productor, director y diseñador
-            estadounidense. Co-fundó el colectivo de música Odd Future y ha
-            evolucionado desde el rap oscuro hasta producciones melódicas y
-            conceptuales galardonadas con el Grammy.
+        <p class="artist-tagline">
+            Productor, Director, Diseñador de Moda & Innovador Sonoro
+        </p>
+        <p class="artist-bio">
+            Tyler Gregory Okonma comenzó su carrera liderando el colectivo
+            juvenil Odd Future en Los Ángeles. Tras años de producciones crudas,
+            evolucionó hacia arreglos sofisticados de jazz, soul y pop,
+            consolidándose como uno de los creativos más polifacéticos e
+            influyentes de la industria musical actual.
         </p>
     </section>
 
-    <h2>Álbumes Destacados</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Premios Grammy</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">N° 1 en Billboard 200</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">2011</span>
+            <span class="stat-label">Fundación de Golf Wang</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">🏆 Premios y Logros Destacados</h2>
+    <div class="content-grid">
+        <div class="info-block">
+            <h3>Reconocimientos de la Industria</h3>
+            <ul class="bullet-list">
+                <li>
+                    <strong>Mejor Álbum de Rap en los Grammy (2020):</strong> Ganador
+                    con su aclamado disco <em>IGOR</em>.
+                </li>
+                <li>
+                    <strong>Mejor Álbum de Rap en los Grammy (2022):</strong> Ganador
+                    por segunda vez con <em>CALL ME IF YOU GET LOST</em>.
+                </li>
+                <li>
+                    <strong
+                        >Premio Cultural Visionary (Wall Street Journal 2019):</strong
+                    > Reconocido por su impacto cultural interdisciplinario.
+                </li>
+                <li>
+                    <strong>MTV Video Music Awards:</strong> Ganador a Mejor Artista
+                    Nuevo (2011) con el impacto de "Yonkers".
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h3>Impacto & Emprendimiento</h3>
+            <ul class="bullet-list">
+                <li>
+                    <strong>Fundador de Camp Flog Gnaw Carnival:</strong> Uno de los
+                    festivales de música más exitosos e independientes de Los Ángeles.
+                </li>
+                <li>
+                    <strong>Creador de Golf Wang & Le FLEUR*:</strong> Marcas de moda
+                    de alta costura que han colaborado con Converse, Lacoste y Louis
+                    Vuitton.
+                </li>
+                <li>
+                    <strong>Director de Arte Completo:</strong> Diseña personalmente
+                    la estética, portadas, vestuarios y dirige la mayoría de sus videos
+                    musicales (bajo el seudónimo Wolf Haley).
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">💿 Álbumes Clave</h2>
     <div class="albums-grid">
         <div class="album-card">
-            <h3>IGOR</h3>
-            <p>2019</p>
+            <h4>IGOR</h4>
+            <p class="album-year">2019</p>
+            <p>
+                Obra narrativa sobre el desamor con producción de synth-pop y
+                funk conceptual.
+            </p>
         </div>
         <div class="album-card">
-            <h3>CALL ME IF YOU GET LOST</h3>
-            <p>2021</p>
+            <h4>CALL ME IF YOU GET LOST</h4>
+            <p class="album-year">2021</p>
+            <p>Homenaje a las mixtapes clásicas con narración de DJ Drama.</p>
         </div>
         <div class="album-card">
-            <h3>Flower Boy</h3>
-            <p>2017</p>
+            <h4>Flower Boy</h4>
+            <p class="album-year">2017</p>
+            <p>
+                El punto de quiebre en su carrera hacia un sonido melódico,
+                introspectivo y orquestal.
+            </p>
         </div>
     </div>
 </Layout>

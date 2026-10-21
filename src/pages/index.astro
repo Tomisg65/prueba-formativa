@@ -4,56 +4,64 @@ import Button from "../components/button.astro";
 ---
 
 <Layout title="Inicio">
-	<section class="hero">
-		<h1>Iconos del Hip-Hop Moderno</h1>
+	<section class="hero-home">
+		<h1>Las 4 Mentes Maestras del Hip-Hop</h1>
 		<p>
-			Explora la trayectoria y discografía de cuatro de los artistas más
-			influyentes de la última década.
+			Explora la biografía, mayores reconocimientos, récords mundiales e
+			hitos históricos de cuatro de los artistas más dominantes de nuestra
+			era.
 		</p>
 	</section>
 
 	<div class="artists-grid">
 		<div class="card">
-			<h2>Tyler, The Creator</h2>
-			<p>Productor, rapero y diseñador de moda revolucionario.</p>
-			<Button href="/tyler">Ver perfil</Button>
+			<div class="card-header">
+				<h3>Tyler, The Creator</h3>
+				<span class="genre-tag">Alternative Hip-Hop</span>
+			</div>
+			<p>
+				Productor visionario, ganador de 2 Grammys y fundador de la
+				marca Golf Wang.
+			</p>
+			<Button href="/tyler">Ver Logros & Biografía</Button>
 		</div>
+
 		<div class="card">
-			<h2>Kendrick Lamar</h2>
-			<p>Ganador de 27 grammys y lírico excepcional.</p>
-			<Button href="/kendrick">Ver perfil</Button>
+			<div class="card-header">
+				<h3>Kendrick Lamar</h3>
+				<span class="genre-tag">Conscious Rap</span>
+			</div>
+			<p>
+				Primer rapero en ganar un Premio Pulitzer de Música y poseedor
+				de múltiples Grammys.
+			</p>
+			<Button href="/kendrick">Ver Logros & Biografía</Button>
 		</div>
+
 		<div class="card">
-			<h2>Kanye West</h2>
-			<p>Pionero de la producción, Genio creativo y figura clave en la música.</p>
-			<Button href="/kanye">Ver perfil</Button>
+			<div class="card-header">
+				<h3>Kanye West</h3>
+				<span class="genre-tag">Hip-Hop / Industrial</span>
+			</div>
+			<p>
+				Pionero del sonido moderno con más de 24 Premios Grammy en su
+				trayectoria.
+			</p>
+			<Button href="/kanye">Ver Logros & Biografía</Button>
 		</div>
+
 		<div class="card">
-			<h2>Frank Ocean</h2>
-			<p>Maestro de la narrativa y voz única del R&B alternativo.</p>
-			<Button href="/frank">Ver perfil</Button>
+			<div class="card-header">
+				<h3>Drake</h3>
+				<span class="genre-tag">Melodic Rap / R&B</span>
+			</div>
+			<p>
+				El artista con más éxitos en la historia del Billboard Hot 100 y
+				dominador comercial global.
+			</p>
+			<Button href="/drake">Ver Logros & Biografía</Button>
 		</div>
 	</div>
 </Layout>
 
-<style>
-	.hero {
-		text-align: center;
-		margin-bottom: 3rem;
-	}
-	.artists-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.5rem;
-	}
-	.card {
-		background-color: var(--card-bg);
-		padding: 1.5rem;
-		border-radius: 8px;
-		border: 1px solid #333;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		gap: 1rem;
-	}
-</style>
+

@@ -5,27 +5,105 @@ import Layout from "../layouts/layout.astro";
 <Layout title="Kendrick Lamar">
     <section class="artist-hero">
         <h1>Kendrick Lamar</h1>
-        <p>
-            Kendrick Lamar Duckworth es considerado uno de los líricos más
-            importantes de todos los tiempos. Conocido por sus álbumes
-            conceptuales que abordan temas sociales, raciales y de superación
-            personal.
+        <p class="artist-tagline">
+            Lírico Pulitzer, Narrador Social & Icono de Compton
+        </p>
+        <p class="artist-bio">
+            Originario de Compton, California, Kendrick Lamar es aclamado
+            mundialmente por sus complejas letras, álbumes conceptuales
+            minuciosamente estructurados y su capacidad para capturar las
+            complejidades políticas, raciales y existenciales de la sociedad
+            contemporánea.
         </p>
     </section>
 
-    <h2>Álbumes Destacados</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-number">17</span>
+            <span class="stat-label">Premios Grammy</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Premio Pulitzer</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Álbumes N° 1 en EE.UU.</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">🏆 Premios y Logros Destacados</h2>
+    <div class="content-grid">
+        <div class="info-block">
+            <h3>Hitos Históricos</h3>
+            <ul class="bullet-list">
+                <li>
+                    <strong>Premio Pulitzer de Música (2018):</strong> Se convirtió
+                    en el primer artista fuera del género clásico y jazz en recibir
+                    este honor por su álbum <em>DAMN.</em>
+                </li>
+                <li>
+                    <strong>17 Premios Grammy:</strong> Tercer rapero con más galardones
+                    en la historia de la Academia.
+                </li>
+                <li>
+                    <strong>Presentación en el Super Bowl LVI (2022):</strong> Ganó
+                    un premio Emmy por su show junto a Dr. Dre, Snoop Dogg y Eminem.
+                </li>
+                <li>
+                    <strong>Genera Generacional:</strong> Nombrado por la revista
+                    Time como una de las 100 personas más influyentes del mundo.
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h3>Contribución Cultural</h3>
+            <ul class="bullet-list">
+                <li>
+                    <strong>Himnos de Protesta:</strong> Su canción "Alright" se convirtió
+                    en el himno del movimiento por los derechos civiles modernos Black
+                    Lives Matter.
+                </li>
+                <li>
+                    <strong>Curaduría de Black Panther (2018):</strong> Produjo y
+                    dirigió la banda sonora de la película de Marvel, siendo nominada
+                    al Oscar.
+                </li>
+                <li>
+                    <strong>Fundador de pgLang:</strong> Empresa de entretenimiento
+                    independiente que desarrolla proyectos visuales, musicales y de
+                    moda.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">💿 Álbumes Clave</h2>
     <div class="albums-grid">
         <div class="album-card">
-            <h3>To Pimp a Butterfly</h3>
-            <p>2015</p>
+            <h4>To Pimp a Butterfly</h4>
+            <p class="album-year">2015</p>
+            <p>
+                Considerado uno de los mejores discos de la historia, mezclando
+                jazz, funk, spoken word y rap.
+            </p>
         </div>
         <div class="album-card">
-            <h3>good kid, m.A.A.d city</h3>
-            <p>2012</p>
+            <h4>good kid, m.A.A.d city</h4>
+            <p class="album-year">2012</p>
+            <p>
+                Una "película en formato CD" sobre la juventud, violencia y fe
+                en las calles de Compton.
+            </p>
         </div>
         <div class="album-card">
-            <h3>DAMN.</h3>
-            <p>2017</p>
+            <h4>DAMN.</h4>
+            <p class="album-year">2017</p>
+            <p>
+                Disco ganador del Pulitzer que explora la dualidad de la
+                moralidad y la fama.
+            </p>
         </div>
     </div>
 </Layout>
