@@ -1,0 +1,50 @@
+---
+import Button from "./button.astro";
+---
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="/" class="brand">🎵 HipHop Icons</a>
+        <nav class="nav-links">
+            <Button href="/" variant="secondary">Inicio</Button>
+            <Button href="/tyler">Tyler, The Creator</Button>
+            <Button href="/kendrick">Kendrick Lamar</Button>
+            <Button href="/kanye">Kanye West</Button>
+            <Button href="/frank">Frank Ocean</Button>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .navbar {
+        background-color: #1a1a1a;
+        border-bottom: 1px solid #333;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .nav-container {
+        max-width: 1100px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+</style>
