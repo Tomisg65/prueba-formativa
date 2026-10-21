@@ -5,26 +5,102 @@ import Layout from "../layouts/layout.astro";
 <Layout title="Kanye West">
     <section class="artist-hero">
         <h1>Kanye West (Ye)</h1>
-        <p>
-            Kanye Omari West es un rapero, productor y diseñador de moda. Ha
-            influido enormemente en la evolución del hip-hop moderno gracias a
-            sus constantes innovaciones sonoras.
+        <p class="artist-tagline">
+            Reinventor de la Producción, Diseñador & Titán del Hip-Hop
+        </p>
+        <p class="artist-bio">
+            Desde sus inicios como productor estrella de Roc-A-Fella Records
+            hasta convertirse en uno de los artistas con mayores ventas de todos
+            los tiempos, Kanye West ha redefinido el sonido del hip-hop en
+            múltiples épocas a través de la innovación de samples,
+            sintetizadores y arreglos corales.
         </p>
     </section>
 
-    <h2>Álbumes Destacados</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-number">24</span>
+            <span class="stat-label">Premios Grammy</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">+160M</span>
+            <span class="stat-label">Ventas de Discos</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">10</span>
+            <span class="stat-label">Álbumes N° 1 Consecutivos</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">🏆 Premios y Logros Destacados</h2>
+    <div class="content-grid">
+        <div class="info-block">
+            <h3>Reconocimientos Musicales</h3>
+            <ul class="bullet-list">
+                <li>
+                    <strong>24 Premios Grammy:</strong> Empatado entre los artistas
+                    de hip-hop más premiados en la historia de la Academia.
+                </li>
+                <li>
+                    <strong>Dominio de Listas:</strong> Uno de los pocos artistas
+                    en debutar 10 álbumes consecutivos en el N° 1 de la lista Billboard
+                    200.
+                </li>
+                <li>
+                    <strong>Transformación de Eras:</strong> Responsable del cambio
+                    del gangsta rap al hip-hop introspectivo con <em
+                        >808s & Heartbreak</em
+                    > (base del rap melódico moderno).
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h3>Innovación en Moda e Industria</h3>
+            <ul class="bullet-list">
+                <li>
+                    <strong>Imperio Yeezy:</strong> Revolucionó la industria del calzado
+                    y la moda urbana global en colaboración con Adidas y Nike.
+                </li>
+                <li>
+                    <strong>Pionero en 'Listening Parties':</strong> Redefinió los
+                    lanzamientos de música convirtiendo ensayos y eventos en estadios
+                    en espectáculos en vivo globales.
+                </li>
+                <li>
+                    <strong>Mentor de Creativos:</strong> Lanzó la carrera de múltiples
+                    productores, diseñadores y artistas prominentes (como Virgil Abloh
+                    o Travis Scott).
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">💿 Álbumes Clave</h2>
     <div class="albums-grid">
         <div class="album-card">
-            <h3>My Beautiful Dark Twisted Fantasy</h3>
-            <p>2010</p>
+            <h4>My Beautiful Dark Twisted Fantasy</h4>
+            <p class="album-year">2010</p>
+            <p>
+                Aclamado universalmente como una obra maestra maximalista de la
+                producción musical.
+            </p>
         </div>
         <div class="album-card">
-            <h3>The College Dropout</h3>
-            <p>2004</p>
+            <h4>The College Dropout</h4>
+            <p class="album-year">2004</p>
+            <p>
+                Álbum debut que popularizó la técnica de sampleo 'pitched-up
+                soul'.
+            </p>
         </div>
         <div class="album-card">
-            <h3>Yeezus</h3>
-            <p>2013</p>
+            <h4>808s & Heartbreak</h4>
+            <p class="album-year">2008</p>
+            <p>
+                Álbum altamente influyente que sentó las bases del emo-rap y R&B
+                moderno.
+            </p>
         </div>
     </div>
 </Layout>
